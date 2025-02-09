@@ -363,7 +363,7 @@ a.dotted-link:hover {
 /* Responsive styles */
 @media (max-width: 1200px) {
   .header .section {
-    margin: 0 50px;
+    margin: 0 auto;
   }
 }
 
