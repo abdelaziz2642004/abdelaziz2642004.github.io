@@ -38,40 +38,45 @@ body {
   margin-bottom: 15px;
 }
 .header .section {
-  background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  background: rgba(0, 0, 0, 0.8); 
   border-radius: 20px;
-  margin: 0 550px;
-  padding: 3px 0; /* Add margin to cut the sides */
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 800px; /* Set a maximum width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 .name {
   font-size: 5rem;
   font-weight: bold;
   margin: 10px 0;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 .desc {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 300;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 .social {
   list-style: none;
   padding: 0;
   margin-top: 15px;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 .social li {
   display: inline-block;
   margin: 0 10px;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 .social a {
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 20px;
   transition: 0.3s;
 }
 .social a:hover {
-  color: #f4d03f;
+  color: #d2ad07;
 }
 
 h1,
@@ -353,4 +358,43 @@ a.dotted-link:hover {
   .project-image {
     margin-bottom: 15px;
   }
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .header .section {
+    margin: 0 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  .header .section {
+    margin: 0 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header .section {
+    margin: 0 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header .section {
+    margin: 0 10px;
+    padding: 10px;
+  }
+}
+
+/* Flexbox for name, job, and social links */
+.header .section .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header .section .name,
+.header .section .desc,
+.header .section .social {
+  margin: 10px 0;
 }
